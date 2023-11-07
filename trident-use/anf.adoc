@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: trident-use/anf.html 
+keywords: trident backend, azure netapp files, smb volumes, smb, windows, drivers, access modes, rwo, rwx, rwp, rwop, file system 
+summary: Puoi configurare Azure NetApp Files come back-end per Astra Trident. È possibile collegare volumi NAS e SMB utilizzando un backend Azure NetApp Files. 
+---
+= Configurare un backend Azure NetApp Files
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puoi configurare Azure NetApp Files come back-end per Astra Trident. È possibile collegare volumi NFS e SMB utilizzando un backend Azure NetApp Files.
+
+
+
+== Dettagli del driver Azure NetApp Files
+
+Astra Trident offre i seguenti driver di storage Azure NetApp Files per comunicare con il cluster. Le modalità di accesso supportate sono: _ReadWriteOnce_ (RWO), _ReadOnlyMany_ (ROX), _ReadWriteMany_ (RWX), _ReadWriteOncePod_ (RWOP).
+
+[cols="2, 1, 1, 2, 2"]
+|===
+| Driver | Protocollo | VolumeMode | Modalità di accesso supportate | File system supportati 
+
+
+| `azure-netapp-files`  a| 
+NFS
+PMI
+ a| 
+Filesystem
+ a| 
+RWO, ROX, RWX, RWOP
+ a| 
+`nfs`, `smb`
+
+|===
+
+
+== Considerazioni
+
+* Il servizio Azure NetApp Files non supporta volumi inferiori a 100 GB. Astra Trident crea automaticamente volumi da 100 GB se viene richiesto un volume più piccolo.
+* Astra Trident supporta volumi SMB montati su pod eseguiti solo su nodi Windows.
+
