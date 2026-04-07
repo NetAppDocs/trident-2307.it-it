@@ -4004,4 +4004,6 @@ Astra Trident</block>
   <block id="62bc04158f931e9b0a26f5676c8ab043" category="paragraph"><block ref="62bc04158f931e9b0a26f5676c8ab043" category="inline-link-macro-rx"></block></block>
   <block id="15bd21e4cb669eaf47cfec94c1119ed7" category="paragraph">NetApp migliora e perfeziona costantemente i suoi prodotti e servizi. Ecco alcune delle ultime funzionalità di Astra Trident. Per le versioni precedenti, consultare la documentazione delle versioni precedenti.</block>
   <block id="67826c4969c30c033af1c61762389384" category="sidebar">Astra Trident è un sistema open source di provisioning e orchestrazione dello storage, gestito da NetApp. Consente di creare volumi di storage per applicazioni containerizzate gestite da Docker e Kubernetes. **Leggere le note di rilascio per informazioni importanti sull'aggiornamento ad Astra Trident 23.07.**</block>
+  <block id="23dc68eb3282da7f8baebc1f7c84fff9" category="inline-link">Pagina del ciclo di vita del supporto</block>
+  <block id="df26dce8cff00211af89034cce0d1904" category="admonition">Per il programma di supporto della versione più recente di Trident, fare riferimento a <block ref="605c91b6d04b068d1f5e6199e80f3518" category="inline-link-rx"></block>.</block>
 </blocks>
